@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { ExampleComponent } from './ExampleComponent';
-import { text } from '@storybook/addon-knobs/react';
+import { text } from '@storybook/addon-knobs';
 
 const stories = storiesOf('ExampleComponent', module);
 
 stories.add('ExampleComponent', () => <ExampleComponent text={text('text', 'Some text')} />, {
-   info: { inline: true },
-   text: `
+    info: { inline: true },
+    text: `
 
   ### Notes
 
